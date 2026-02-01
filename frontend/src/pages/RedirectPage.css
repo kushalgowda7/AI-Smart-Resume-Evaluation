@@ -1,0 +1,62 @@
+.redirect-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+}
+
+.redirect-box {
+    background-color: #ffffff;
+    padding: 3rem 4rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    border: 1px solid #e5e7eb;
+}
+
+.redirect-icon {
+    font-size: 3rem;
+    color: #4f46e5;
+    margin-bottom: 1.5rem;
+}
+
+.redirect-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 0.5rem 0;
+}
+
+.redirect-text {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0 0 2rem 0;
+}
+
+.redirect-progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.redirect-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #4f46e5, #818cf8);
+    border-radius: 5px;
+    transition: width 0.05s linear;
+}
+
+.redirect-footer {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}

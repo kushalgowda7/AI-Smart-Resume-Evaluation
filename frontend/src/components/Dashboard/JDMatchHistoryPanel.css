@@ -1,0 +1,145 @@
+.jd-history-panel {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: #f9fafb;
+    border-left: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.jd-history-header {
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.match-new-jd-btn-panel {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4338ca;
+    background-color: #eef2ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.match-new-jd-btn-panel:hover {
+    background-color: #e0e7ff;
+    border-color: #a5b4fc;
+}
+
+.separator-line {
+    height: 1px;
+    background-color: #4338ca;
+    margin: 1rem 0;
+}
+
+.jd-history-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+.jd-history-list {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.jd-history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.jd-history-item:hover {
+    background-color: #f3f4f6;
+}
+
+.jd-history-item.selected {
+    background-color: #eef2ff;
+    border-color: #818cf8;
+}
+
+.jd-history-item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.jd-history-item-score {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.jd-history-item-details {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.jd-history-item-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1f2937;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.jd-history-item-date {
+    font-size: 0.75rem;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.jd-history-delete-btn {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s, color 0.2s, background-color 0.2s;
+    opacity: 1;
+    flex-shrink: 0;
+}
+
+.jd-history-item:hover .jd-history-delete-btn {
+    opacity: 1;
+}
+
+.jd-history-delete-btn:hover {
+    color: #ef4444;
+    background-color: #fee2e2;
+}
+
+.jd-history-empty {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b7280;
+}

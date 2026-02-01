@@ -1,0 +1,68 @@
+.jd-match-page-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.jd-main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* The single scrollbar for the main content area */
+}
+
+.jd-input-wrapper {
+    padding: 0.5rem 1rem 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.jd-match-page-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.jd-main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* The single scrollbar for the main content area */
+}
+
+.jd-input-wrapper {
+    padding: 0.5rem 1rem 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.jd-report-wrapper {
+    padding: 0;
+    flex-grow: 1;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 992px) {
+    .jd-match-page-container {
+        flex-direction: column;
+    }
+
+    .jd-main-content {
+        height: auto;
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+
+    .jd-history-panel {
+        width: 100%;
+        height: auto !important;
+        /* Override the fixed height from component css */
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+        max-height: 35vh;
+        min-height: 150px;
+        flex-shrink: 0;
+    }
+}

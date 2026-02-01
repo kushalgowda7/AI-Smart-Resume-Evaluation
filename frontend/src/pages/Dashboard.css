@@ -1,0 +1,123 @@
+/* General Dashboard Styles */
+.dashboard-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.dashboard-header p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+.dashboard-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+/* Analyze Prompt Styles */
+.analyze-prompt {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.analyze-prompt p {
+    font-size: 1.1rem;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.analyze-button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analyze-button:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+.analyze-button:disabled {
+    background-color: #9DB2BF;
+    cursor: not-allowed;
+}
+
+/* In-Table Analyze Button */
+.analyze-button-table {
+    background-color: #3b82f6; /* A different blue */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.analyze-button-table:hover:not(:disabled) {
+    background-color: #2563eb;
+}
+
+.analyze-button-table:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* View Report Button Styles */
+.view-report-button {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-report-button:hover {
+    background-color: #218838;
+}
+
+/* Universal Error Message Style for Dashboards */
+.error-message-upload {
+    color: #e74c3c;
+    background-color: #fdd;
+    border: 1px solid #e74c3c;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+}

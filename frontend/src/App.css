@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use min-height to ensure it fills the viewport */
+  background-color: #f0f4f8;
+}
+
+.main-container {
+  flex-grow: 1;
+  position: relative;
+}
